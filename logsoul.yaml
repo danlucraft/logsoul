@@ -1,0 +1,15 @@
+log_files: /Users/danlucraft/projects/logsoul/*.log
+log_format: 
+  regex: "^(\w+) (\d+) (\d+):(\d+):(\d+) ([\w-]+) ([\w-]+)\[(\d+)\]:\s+(\w+)\s+([^\s]+)\s+:\s+(.*)$"
+  captures:
+    - month
+    - day
+    - hours
+    - minutes
+    - seconds
+    - machine
+    - process_name
+    - process_id
+    - log_level
+    - class
+    - message
